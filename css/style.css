@@ -1,0 +1,526 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  font-family: 'Mukta', sans-serif;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+.logo span{
+  color: #117964;
+}
+#active{
+  color: #117964;
+}
+.menu-items li{
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  color: #117964;
+}
+
+ /* banner */
+
+ .swiper {
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* about */
+.about{
+  margin-top: 100px;
+}
+#about{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.about_img img{
+  width: 100%;
+}
+.about_text{
+  width: 100%;
+}
+.about_text h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: #117964;
+  line-height: 80px;
+}
+.about_text p{
+  line-height: 25px;
+}
+
+.btn{
+  display: inline-block;
+  border: 1px solid #117964;
+  color: #117964;
+  padding: 8px 35px;
+  margin-top: 30px;
+}
+
+.btn:hover{
+   background-color: #117964;
+   color: #fff;
+   transition: 0.8s;
+}
+/* catagore */
+.catagore{
+  margin-top: 70px;
+}
+.item{
+  justify-content: space-around;
+   align-content: center;
+   border-image-slice: 1;
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   
+}
+ .pos1{
+   height: 350px;
+   width: 350px;
+   background-image: url(../img/flower-plant.jpg);
+   background-size: 350px;
+   background-position: center;
+   transition: .5s;
+   background-repeat: no-repeat;
+}
+.pos2{
+   height: 350px;
+   width: 350px;
+   background-image: url(../img/fruit-plant.jpg);
+   background-size: 350px;
+   background-position: center;
+   transition: .5s;
+}
+.pos3{
+   height: 350px;
+   width: 350px;
+   background-image: url(../img/indoor-plant.jpg);
+   background-size: 350px;
+   background-position: center;
+   transition: .5s;
+}
+.card{
+   margin: 40px;
+   width: 350px;
+   background-color: #117964;
+   display: grid;
+   justify-content: center;
+   height: 500px;
+   border-radius: 4px;
+   text-align: center;
+   overflow: hidden;
+   transition: .5s;
+   box-shadow: 0px 5px 10px 0px #aaa; 
+}
+.card>img{
+    width: 350px;
+}
+.abv{
+   margin-top: 40%;
+   padding: 30px;
+   font-size: 25px;
+   font-family: nyala;
+   font-weight: bolder;
+   color: #117964;
+   background: rgba(255,255,255,.5);
+
+}
+.card>h2{
+   text-align: center;
+   font-family: Gabriola;
+   color: #fff;
+   font-size: 30px;
+}
+.pos1:hover{
+   background-size: 400px;
+}
+.pos2:hover{
+   background-size: 400px;
+}
+.pos3:hover{
+   background-size: 400px;
+}
+/* testimpneal */
+
+.testimonials
+{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+
+.testimonial-inner
+{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border
+{
+  width: 160px;
+  height: 5px;
+  background: #117964;
+  margin: 10px auto;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col
+{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing:  border-box;
+  padding: 15px;
+}
+
+.testimonial
+{
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 5px 10px 0px #aaa; 
+}
+.testimonial:hover{
+  background-color: #117964;
+  transition: 0.8s;
+  color: #fff;
+}
+
+.testimonial img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars
+{
+  color: #f0932b;
+  margin-bottom: 20px;
+}
+
+/* contact */
+.contact{
+  margin-top: 50px;
+}
+.contact h1{
+  text-align: center;
+}
+label{
+  display:block;
+  margin:1em 0 .2em;
+}
+
+/* single-line text, checkbox, and button */
+input, select, textarea{
+  display:block;
+  width:100%;
+  padding:.3em;
+  font-size:20px;
+  background-color:#fbfbfb;
+  border:solid 1px #117964;
+  resize:vertical;
+}
+textarea{
+  min-height:180px;
+}
+select{
+  color: #117964;
+}
+option{
+  color: #117964;
+  background: lavenderBlush;
+}
+input[type=checkbox]{
+  display:inline;
+  width:auto;
+}
+
+input[type=submit]{
+  background: #117964;
+  margin:1em 0 0;
+  color:white;
+  border:none;
+  border-radius:8px;
+  transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+  background: #a6d6cc;
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+  background: #a6d6cc;
+  outline:none;
+}
+
+/* footer */
+.footer-distributed{
+	background: #02382d;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	 font-size: 35px;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #117964;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #fff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-center i:hover{
+    background-color: #117964;
+    transition: 0.8s;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #fff;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #fff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-icons a:hover{
+  background-color: #117964;
+  transition: 0.8s;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+
+
+
+
+
+
+
+
